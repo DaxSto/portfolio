@@ -1,0 +1,29 @@
+
+---
+title: "My Projects"
+---
+
+### E-Business Analytics Project
+
+Here is an example of a past project of mine demonstrating various data analysis skills.
+
+### Project 1: Introduction to E-Business Analytics
+
+**Objective:**  Analyze datasets to extract business insights
+
+**Key Skills:**
+
+#### - Understanding Relationships
+Knowing how variables relate to one another help businesses to identify drivers of performance. Understanding these relationships allows for a clear explanation for why something is happening and predict what might happen next. This in turn can be used to better support business decisions.
+
+#### - Dataset Reading
+Before any analysis can begin, analysts must correctly read and understand a given dataset. This includes knowing each column type, identifying data quality issues, and ensuring information aligns with business objectives. Ultimately good dataset reading prevents mistakes.
+
+#### - Business Recommendation Development
+Dataset analysis is only valuable if it leads to results. Turning insights into recommendations help businesses use data to drive real results.
+
+[View detailed analysis →](project1.html)
+
+---
+
+[← Back to Home](index.html)

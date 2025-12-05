@@ -1,0 +1,31 @@
+
+---
+title: "Welcome to My Portfolio"
+---
+
+### Hello and Welcome
+My name is Daxson Storey, and this is my portfolio. Here you'll find a review of some of my skills I have learned while enrolled in the E-Management program along with a review of my skills in:
+
+- 📊 Data cleaning and transformation
+- 📈 Statistical analysis
+- 🔍 Data visualization
+- 📝 Professional reporting with R Markdown
+
+### Featured Projects
+
+Within this portfolio you'll see a past project of mine that goes over:  
+
+- **Business Analysis:** Working with datasets
+
+- **Data Visualization:** Creating charts and graphics
+
+### Navigate This Portfolio
+
+Use the menu above to:
+
+- Learn more [About Me](about.html)
+- View my [Projects](projects.html)
+
+---
+
+*This portfolio was built using R Markdown and is hosted on GitHub Pages.*

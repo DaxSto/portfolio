@@ -1,0 +1,34 @@
+
+---
+title: "About Me"
+---
+
+### Background
+I am currently a third-year student at Vancouver Island University where I have been apart of the Bachelor of Business Administration program for just about two years. I am currently building skills in  business management looking to get into Human Resources management. I am currently employed at 1-800-Got-Junk where I work part-time as a weekend trainer and have gained experience in sales and commercial driving.  
+
+### Skills & Tools
+
+**Analysis:**
+Through the use of R I have developed skills in using technical software and efficiently review  data files.  
+
+**Visualization & Reporting:**
+To show results and findings within a dataset, I have learned how to use software for a professional presentation through the use of graphs and charts.
+
+**Data Sources:**
+When sourcing data I have developed technical skills in CSV file processing and using government open data.
+
+### Education
+
+**VIU** - Bachelor of Business Administration
+*Expected Graduation: [2027-2028]*
+
+### Contact
+
+Feel free to connect with me:
+
+- Email: [daxson26@icloud.com](mailto:Daxson26@icloud.com)
+- GitHub: [DaxSto](https://github.com/DaxSto)
+
+---
+
+[← Back to Home](index.html)

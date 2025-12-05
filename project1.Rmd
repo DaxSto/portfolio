@@ -1,0 +1,144 @@
+
+---
+title: "Introduction to E-Business Analytics"
+subtitle: "Performance Metrics Report"
+author: "Daxson Storey--655-373-652"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: false
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Executive Summary
+
+The E-Business analysis introduces several ways to present and record information. By creating and plotting data sets mass amounts of information can be sorted and organised with simple accessibility. In summary, an e-business manager could follow the steps of this analysis and understand how to view performance data and learn from it.  
+
+
+## 1. Website Performance Analysis  
+
+```{r}
+# Create website performance dataset with business terminology
+webperfo <- data.frame(
+  engagement = airquality$Temp,
+  performance = airquality$Ozone,
+  server_load = airquality$Wind
+)
+
+```
+
+
+### Q1.a
+
+```{r}
+head(webperfo)
+
+```
+
+There are three columns of data, they are named as engagement, performance, and server_load. Is very useful to see just the first few rows instead of all the data because this allows one to see the structure without being overwhelmed by the full dataset. 
+
+### Q1.b
+
+```{r}
+summary( webperfo )
+
+```
+
+In this summary the performance variable is missing a value and shows NA:37. The summary tells me the min median and maximum of the engagement variable. It ranges from a Min of :56.00 to a max of :97.00 with a median of :79.00.  
+
+### Q1.c
+
+```{r} 
+nrow( webperfo )
+```
+
+Knowing how many days of website data we have can be important to a manager as the longer period of days allows for more accurate results when comparing the minimum and maximum of a given variable. 
+
+### Q1.d
+
+```{r} 
+max( webperfo$engagement )
+```
+
+In a business sense, a max engagement daily score of 97 and a mean engagement daily score of 79 compare to present that on the average day there is moderate engagement however there are a few days with significantly higher engagement. 
+
+### Q1.e
+
+```{r} 
+max(webperfo$performance, na.rm = TRUE )
+```
+
+"na.rm is a logical (TRUE or FALSE) indicating whether missing values should be removed". This allows us to see the max performance excluding the NA variable.
+
+## 2. Understanding Relationships
+
+### Q2.a
+```{r}
+plot(webperfo$engagement, webperfo$performance)
+```
+
+In this plot you can see the pattern between engagement and performance. However for a manager this could be very difficult as on the plot it is hard to depict which is which.
+
+### Q2.b
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score")
+```
+
+By adding the x and y axis titles it would be much easier for a business audience to see what the plot is actually presenting.
+
+### Q2.c
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score",
+     pch = 16, 
+     col = "blue" )
+```
+
+With the blue now added to the plot is is much easier to see how the engagement and performance overlap with one another. Visually it is clear to see how as website engagement rises when website performance is up.   
+
+### Q2.d
+
+```{r}
+plot(x = webperfo$engagement, y = webperfo$performance,
+     main = "User Engagement vs Website Performance",
+     xlab = "Daily User Engagement Score", 
+     ylab = "Website Performance Score",
+    pch = 16, 
+     col = "blue" )
+   
+      abline(lm(performance ~ engagement, data = webperfo), 
+       col = "red",
+       lwd = 2)
+```
+
+The red line shows that when performance is improving website engagement increases. 
+
+## 3. Business Interpretation
+
+### Q3.a
+
+```{r}
+cor(webperfo$engagement, webperfo$performance, use = "complete.obs")
+```
+
+The correlation coefficient is 0.6983603 meaning it is a moderate relationship (between 0.3 and 0.7) 
+
+### Q3.b
+
+Based on the analysis, website performance increases simultaneously with website engagement. An e-business manager should focus on improving website resources and ensuring the website can handle any increase in engagement in the future. With these variables being tracked, an e-business manager should continue to analyse performance metrics to ensure a positive user experience and ensure the website remains functional. 
+
+[Your existing analysis content here]
+
+---
+
+[← Back to Projects](projects.html) | [← Back to Home](index.html)
+

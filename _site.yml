@@ -1,0 +1,22 @@
+---
+name: "portfolio"
+navbar:
+  title: "Portfolio"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Analysis"
+      href: project1.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: tango
+    toc: true
+    toc_float: true
+output_dir: "docs"
+---
+
